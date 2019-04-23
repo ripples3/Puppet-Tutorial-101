@@ -5,21 +5,29 @@ How Puppet Works
 ### Easily get started with infrastructure automation
 With Puppet you can start automating easily with an agentless task-based approach. You can move a step beyond from shareable scripts and leverage existing content on the Puppet Forge from your own workstation or laptop.
 
+
 ### Know what you have
 With Puppet, you know what software you have, how, where, and why it changed, and who did it, all from one view. Always know what you have in your hybrid infrastructure so you can adapt to new technological challenges with confidence.
+
 
 ### Orchestrate change and applications intelligently 
 Whether you schedule a change or push it out directly from HipChat, Git or Jenkins, or commit your next application update, Puppet gives you control, visibility, and automated intelligence to orchestrate change across your software and infrastructure.
 
-### Static Website using Amazon S3 Architecture
+
+### Ensure security & compliance, inherently
+Puppet makes security and compliance inherent and automatic. With Puppet, you get the automation needed to continually enforce policies and the traceability required to prove compliance.
 Today we will focus on routing internet traffic to the Amazon S3 bucket. Please ignore the CloudFront in the image below. We will perfom that someday.
 ![AWS_StaticWebsiteHosting_Architecture](https://github.com/ripples3/Static-Website-using-Amazon-S3/blob/master/AWS_StaticWebsiteHosting_Architecture.png)
 
-### 1. Naming Your S3 Bucket
-It is very important that your bucket has the same name as you domain name.
-For example, your website domain is "example.com", then your S3 bucket name should be "example.com".
 
-### 2. Configuring Your S3 Bucket for Static Website Hosting
+### Adopt modern technologies with consistency
+Puppet makes it possible to automatically install, configure and manage public, hybrid and private cloud, microservice and container resources -- and even manage cluster orchestration tools -- giving you instant portability and streamlined application delivery for multi-cloud environments.
+
+
+### Full control and faster deployment of your applications
+Puppet offers you a simplified standard way to build and deploy traditional and containerized applications with full control and visibility. Plus, we integrate with the most popular source control systems, cloud platforms and ChatOps tools so you don’t have to do custom integration work.
+
+
 Does your bucket and website has the same domain name? If yes, Let proceed the onto the next steep.
 Follow steps below to turn on static website hosting for you S3
 - Navigate to S3 in the AWS Console
