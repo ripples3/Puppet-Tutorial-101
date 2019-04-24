@@ -1,0 +1,41 @@
+Resources:
+  UbuntuM:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-08692d171e3cf02d6
+      PrivateIP: 192.168.198.10
+      KeyName: Don 
+  UbuntuA:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-08692d171e3cf02d6
+      PrivateIP: 192.168.197.10
+      KeyName: Don 
+  RedhatA:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-036affea69a1101c9
+      PrivateIP: 192.168.196.10
+      KeyName: Don 
+      
+  NodeSG:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: for the app nodes that allow ssh, http and docker ports
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: '80'
+        ToPort: '80'
+        CidrIp: 0.0.0.0/0
+      - IpProtocol: tcp
+        FromPort: '22'
+        ToPort: '22'
+        CidrIp: 0.0.0.0/0
+      - IpProtocol: tcp
+        FromPort: '2375'
+        ToPort: '2375'
+        CidrIp: 0.0.0.0/0
+ 
