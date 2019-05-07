@@ -1,3 +1,4 @@
+# Creating EC2 Instance with Specific IP
 Resources:
   UbuntuM:
     Type: AWS::EC2::Instance
